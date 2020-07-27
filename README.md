@@ -13,3 +13,7 @@ Copy the `basic_blink` folder to where you keep your Arduino sketch folders.
 # Setup
 
 By default, the included `basic_blink` sketch will start a headless BASIC interpreter running a (flash stored) program that blinks the LED attached to pin 13 on Arduino Uno boards. To enable a serial console, change the `#define CONSOLE  0` line of `config.ino` to `#define CONSOLE 1`. Also change `#define RAM  0` to `#define RAM  1` and `#define FLASH 1` to `#define FLASH  0` (this changes the program source from being the onboard flash to the onboard RAM). 
+
+# Size
+
+Headless, the interpreter only takes up 348 bytes of RAM, leaving the rest for BASIC programs themselves.
